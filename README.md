@@ -116,16 +116,3 @@ dotnet aspnet-codegenerator razorpage \
 
 ---
 
-
-### Resultado final
-
-| # | Error | Archivo | Estado |
-|---|-------|---------|--------|
-| 1 | Servicios registrados después de `Build()` | `Program.cs` | ✅ Corregido |
-| 2 | `AddRazorPages()` duplicado sin configuración | `Program.cs` | ✅ Corregido |
-| 3 | Faltaba `UseAuthentication()` en el pipeline | `Program.cs` | ✅ Corregido |
-| 4 | Tipo de usuario incorrecto (`IdentityUser` vs `ApplicationUser`) | `Program.cs` + `HeroesContext.cs` | ✅ Corregido |
-
-```
-dotnet build → Compilación correcta. 0 Errores. 7 Advertencias.
-```
